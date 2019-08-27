@@ -12,12 +12,14 @@ Suggest the tags based on the content that was there in the question posted on S
 Source: https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction/
 
 1.2 Source / useful links 
+
 Data Source : https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction/data 
 Youtube : https://youtu.be/nNDqbUhtIRg 
 Research paper : https://www.microsoft.com/en-us/research/wp-content/uploads/2016/02/tagging-1.pdf 
 Research paper : https://dl.acm.org/citation.cfm?id=2660970&dl=ACM&coll=DL
 
 1.3 Real World / Business Objectives and Constraints 
+
 1.	Predict as many tags as possible with high precision and recall.
 2.	Incorrect tags could impact customer experience on StackOverflow.
 3.	No strict latency constraints.
@@ -25,7 +27,9 @@ Research paper : https://dl.acm.org/citation.cfm?id=2660970&dl=ACM&coll=DL
 2. Machine Learning problem 
 
 2.1 Data 
+
 2.1.1 Data Overview 
+
 Refer: https://www.kaggle.com/c/facebook-recruiting-iii-keyword-extraction/data 
 All of the data is in 2 files: Train and Test.
 Train.csv contains 4 columns: Id,Title,Body,Tags.
@@ -50,11 +54,13 @@ Tags - The tags associated with the question in a space-seperated format (all lo
 2.2 Mapping the real-world problem to a Machine Learning Problem 
 
 2.2.1 Type of Machine Learning Problem 
+
 It is a multi-label classification problem 
 Multi-label Classification: Multilabel classification assigns to each sample a set of target labels. This can be thought as predicting properties of a data-point that are not mutually exclusive, such as topics that are relevant for a document. A question on Stackoverflow might be about any of C, Pointers, FileIO and/or memory-management at the same time or none of these. 
 Credit: http://scikit-learn.org/stable/modules/multiclass.html
 
 2.2.2 Performance metric 
+
 Micro-Averaged F1-Score (Mean F Score) : The F1 score can be interpreted as a weighted average of the precision and recall, where an F1 score reaches its best value at 1 and worst score at 0. The relative contribution of precision and recall to the F1 score are equal. The formula for the F1 score is:
 F1 = 2 (precision recall) / (precision + recall)
 In the multi-class and multi-label case, this is the weighted average of the F1 score of each class. 
