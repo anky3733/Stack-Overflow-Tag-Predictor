@@ -1,0 +1,13 @@
+warnings
+pandas
+sqlite3
+csv
+matplotlib
+seaborn
+numpy
+wordcloud
+nltk
+sqlalchemy
+datetime
+scikit-learn
+nltk
