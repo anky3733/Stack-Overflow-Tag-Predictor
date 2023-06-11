@@ -76,9 +76,6 @@ Hamming loss : The Hamming loss is the fraction of labels that are incorrectly p
 https://www.kaggle.com/wiki/HammingLoss 
 
 
-## Code Execution
-• Create an environment 
-
 ### conda env create -f environment.yml
 
 Activate the environment :
@@ -90,5 +87,11 @@ For Windows:
 For macOS and Linux:
 
 ### source activate my_environment
+
+Then run the notebooks available in the directory
+
+• Install the packages directly using 
+
+### pip install requirements.txt
 
 Then run the notebooks available in the directory
